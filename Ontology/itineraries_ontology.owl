@@ -1,0 +1,622 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11"
+     xmlns:crm="http://www.cidoc-crm.org/cidoc-crm"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P89_falls_within -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#companyItineraryInvolves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#companyItineraryInvolves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#companyItinerarySituatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#companyItinerarySituatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Municipality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#culinaryItineraryProposes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#culinaryItineraryProposes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_itinerary"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#culinaryItinerarySituatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#culinaryItinerarySituatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_itinerary"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Municipality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#culturalItineraryProposes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#culturalItineraryProposes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Point_of_interest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#culturalItinerarySituatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#culturalItinerarySituatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Municipality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#hasBrand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#hasBrand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#isInProvince -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#isInProvince">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Municipality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Province"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#isInRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#isInRegion">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Municipality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#BrandDateRegistration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#BrandDateRegistration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#BrandDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#BrandDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#BrandName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#BrandName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItBibl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItBibl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItImageUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItImageUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItLat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItLat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItLoc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItLoc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItLong -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItLong">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItNote">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItSit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItSit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyItType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyNRegister -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyNRegister">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyProdSector -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CompanyProdSector">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItDescr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItDescr">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItImageUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItImageUrl">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItLat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItLat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItLong -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItLong">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItNote">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryItType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryProductName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulinaryProductName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItAddr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItAddr">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItBibl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItBibl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItImageUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItImageUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItInfo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItInfo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItLat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItLat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItLoc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItLoc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItLong -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItLong">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItNote">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItSit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItSit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#CulturalItType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#MunicipalityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#MunicipalityName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Municipality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#MunicipalityZipCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#MunicipalityZipCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Municipality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#POICentury -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#POICentury">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Point_of_interest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#POIName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#POIName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Point_of_interest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#POIStyle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#POIStyle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Point_of_interest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#POIType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#POIType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Point_of_interest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#ProvinceAbbreviation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#ProvinceAbbreviation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Province"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#RegionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#RegionName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Region"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E53_Place -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E53_Place">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Brand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Brand">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Company_itinerary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Itinerary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_itinerary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_itinerary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Itinerary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Culinary_product">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Cultural_itinerary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Itinerary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Itinerary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Itinerary">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Municipality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Municipality">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Point_of_interest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Point_of_interest">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Province -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Province">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#Region">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

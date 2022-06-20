@@ -1,0 +1,108 @@
+[PrefixDeclaration]
+:		http://www.semanticweb.org/marcozenere/ontologies/2022/0/untitled-ontology-11#
+crm:		http://www.cidoc-crm.org/cidoc-crm
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+obda:		https://w3id.org/obda/vocabulary#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+schema:		http://schema.org/
+
+[MappingDeclaration] @collection [[
+mappingId	Company
+target		:company/{id} a :Company ; :CompanyNRegister {n_registro}^^xsd:integer ; :CompanyName {nome}^^xsd:string ; :CompanyProdSector {settore_produzione}^^xsd:string . 
+source		select id, n_registro, nome, settore_produzione
+			from azienda;
+
+mappingId	Brand
+target		:brand/{id} a :Brand ; :BrandName {nome_marchio}^^xsd:string ; :BrandDateRegistration {data_registrazione_marchio}^^xsd:dateTime ; :BrandDescription {descrizione_marchio}^^xsd:string . 
+source		SELECT v1."id", v1."nome_marchio", v1."descrizione_marchio", v1."data_registrazione_marchio"
+			FROM "azienda" v1
+
+mappingId	Culinary Product
+target		:culinaryproduct/{nome} a :Culinary_product ; :CulinaryProductName {nome}^^xsd:string . 
+source		select nome
+			from itinerario_culinario;
+
+mappingId	Municipality
+target		:municipality/{id} a :Municipality ; :MunicipalityName {nome}^^xsd:string ; :MunicipalityZipCode {cap}^^xsd:string . 
+source		select id, nome, cap
+			from comune;
+
+mappingId	Province
+target		:province/{provincia} a :Province ; :ProvinceAbbreviation {provincia}^^xsd:string . 
+source		select provincia
+			from comune;
+
+mappingId	Region
+target		:region/{regione} a :Region ; :RegionName {regione}^^xsd:string . 
+source		select regione
+			from comune;
+
+mappingId	Point of Interest
+target		:poi/{id} a :Point_of_interest ; :POIName {nome}^^xsd:string ; :POIType {tipologia}^^xsd:string ; :POICentury {secolo_costruzione}^^xsd:string ; :POIStyle {stile}^^xsd:string . 
+source		select id, nome, tipologia, secolo_costruzione, stile
+			from luogo_di_interesse;
+
+mappingId	Object Property: hasBrand
+target		:company/{id} :hasBrand :brand/{id_brand} . 
+source		SELECT "azienda"."id" as id, "azienda"."id" as id_brand
+			FROM "azienda"
+
+mappingId	Company Itinerary
+target		:companyitinerary/{id} a :Company_itinerary ; :CompanyItType {tipologia_itinerario}^^xsd:string ; :CompanyItLoc {localita}^^xsd:string ; :CompanyItLong {longitudine}^^xsd:decimal ; :CompanyItLat {latitudine}^^xsd:decimal ; :CompanyItNote {note}^^xsd:string ; :CompanyItBibl {bibliografia}^^xsd:string ; :CompanyItSit {sitografia}^^xsd:string ; :CompanyItImageUrl {url_immagine} . 
+source		select id, tipologia_itinerario, localita, latitudine, longitudine, note, bibliografia, sitografia, url_immagine
+			from itinerario_aziendale;
+
+mappingId	Object property: companyItineraryInvolves
+target		:companyitinerary/{it_azie_id} :companyItineraryInvolves :company/{a_id} . 
+source		select it_azie.azienda_id as it_azie_id, it_azie.azienda_id as a_id
+			from itinerario_aziendale as it_azie
+
+mappingId	Culinary Itinerary
+target		:culinaryitinerary/{id} a :Culinary_itinerary ; :CulinaryItType {tipologia}^^xsd:string ; :CulinaryItDescr {descrizione}^^xsd:string ; :CulinaryItLat {latitudine}^^xsd:decimal ; :CulinaryItLong {longitudine}^^xsd:decimal ; :CulinaryItImageUrl {url_immagine} . 
+source		select id, tipologia, descrizione, note, latitudine, longitudine, url_immagine
+			from itinerario_culinario;
+
+mappingId	Cultural Itinerary
+target		:culturalitinerary/{id} a :Cultural_itinerary ; :CulturalItAddr {via}^^xsd:string ; :CulturalItLoc {localita}^^xsd:string ; :CulturalItType {tipologia}^^xsd:string ; :CulturalItInfo {informazioni}^^xsd:string ; :CulturalItNote {note}^^xsd:string ; :CulturalItBibl {bibliografia}^^xsd:string ; :CulturalItSit {sitografia}^^xsd:string ; :CulturalItLat {latitudine}^^xsd:decimal ; :CulturalItLong {longitudine}^^xsd:decimal ; :CulturalItImageUrl {url_immagine} . 
+source		select id, via, localita, tipologia, informazioni, note, bibliografia, sitografia, latitudine, longitudine, url_immagine
+			from itinerario_culturale;
+
+mappingId	Object property: culturalItinerarySituatedIn
+target		:culturalitinerary/{it_cult_id} :culturalItinerarySituatedIn :municipality/{c_id} . 
+source		select it_cult.id as it_cult_id, it_cult.comune_id as c_id
+			from itinerario_culturale as it_cult
+
+mappingId	Object property: culturalItineraryProposes
+target		:culturalitinerary/{it_cult_id} :culturalItineraryProposes :poi/{poi_id} . 
+source		select it_cult.ID as it_cult_id, it_cult.luogo_interesse_id as poi_id
+			from itinerario_culturale as it_cult
+
+mappingId	Object property: culinaryItinerarySituatedIn
+target		:culinaryitinerary/{it_culi_id} :culinaryItinerarySituatedIn :municipality/{c_id} . 
+source		select it_culi.id as it_culi_id, it_culi.comune_id as c_id
+			from itinerario_culinario as it_culi
+
+mappingId	Object Property: culinaryItineraryProposes
+target		:culinaryitinerary/{id} :culinaryItineraryProposes :culinaryproduct/{nome} . 
+source		select id, nome
+			from itinerario_culinario;
+
+mappingId	Object Property: companyItinerarySituatedIn
+target		:companyitinerary/{it_azie_id} :companyItinerarySituatedIn :municipality/{c_id} . 
+source		select it_azie.id as it_azie_id, it_azie.comune_id as c_id
+			from itinerario_aziendale as it_azie
+
+mappingId	Object property: isInRegion
+target		:municipality/{id} :isInRegion :region/{regione} . 
+source		select id, regione
+			from comune
+
+mappingId	Object property: isInProvince
+target		:municipality/{id} :isInProvince :province/{provincia} . 
+source		select id, provincia
+			from comune;
+]]
+
